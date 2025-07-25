@@ -1,13 +1,21 @@
-  <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; width: 340px; padding: 18px 14px; background: #f7f9fa; }
-    h3 { color: #4285f4; margin-top: 0; }
-    #domain { font-size: 15px; margin-bottom: 10px; color: #333; }
-    #lookup { background: #4285f4; color: #fff; border: none; border-radius: 4px; padding: 8px 18px; font-size: 15px; cursor: pointer; margin-bottom: 12px; transition: background 0.2s; }
-    #lookup:hover { background: #3367d6; }
-    #result { font-size: 13px; background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; margin-top: 10px; padding: 10px; max-height: 260px; overflow-y: auto; color: #222; box-shadow: 0 1px 3px rgba(60,64,67,.08); }
-    #loading { color: #888; font-size: 13px; }
-  </style>
-  <div id="domain"></div>
-  <button id="lookup" style="display:none;">查询 Whois</button>
-  <div id="loading" style="display:none;">查询中...</div>
-  <div id="result"></div> 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Whois 查询助手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Whois 查询助手</h2>
+  <div>
+    <input type="text" id="domainInput" placeholder="输入域名，如 example.com">
+    <button id="queryBtn">查询</button>
+  </div>
+  <div id="autoQuery">
+    <button id="autoBtn">自动获取当前域名并查询</button>
+  </div>
+  <div id="result"></div>
+  <p class="tip">Whois API为公益性质的免费接口，请勿恶意调用或高频请求。</p>
+  <script src="popup.js"></script>
+</body>
+</html> 
