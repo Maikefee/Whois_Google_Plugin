@@ -3,6 +3,8 @@
   "name": "Whois 查询助手",
   "version": "1.0",
   "description": "自动或手动查询当前域名的 Whois 信息。",
+  "author": "maikefee",
+  "homepage_url": "https://github.com/Maikefee",
   "permissions": [
     "activeTab",
     "scripting"
