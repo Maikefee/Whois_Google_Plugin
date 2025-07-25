@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Whois Lookup by jsonwhoisapi",
+    "version": "1.0",
+    "description": "获取当前页面域名的 whois 信息",
+    "permissions": [
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
